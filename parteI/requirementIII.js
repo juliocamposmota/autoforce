@@ -1,6 +1,8 @@
 let fieldsetForm = document.querySelector('form.conversion-form fieldset')
 let formGroups = document.querySelectorAll('form.conversion-form div.form-group')
 
+// Select element
+
 let options = ['SUV', 'Sedan', 'Hatch', 'Pickup']
 
 let divFormGroup = formGroups[0].cloneNode(true)
@@ -72,28 +74,36 @@ function onClick() {
   closeChoices()
 }
 
+// TextArea element
+let textAreaFormGroup = document.createElement('div')
+let textArea = document.createElement('textarea')
 
+textAreaFormGroup.setAttribute('class', 'form-group')
 
-// let choiceItemSelectable = choicesList[2].children[1].cloneNode(true)
+textArea.setAttribute('class', 'form-control')
+textArea.setAttribute('placeholder', 'Menssagem')
+textArea.setAttribute('name', 'message')
 
-// let optionElement = document.querySelector('div.form-group option')
-// optionElement.setAttribute('value', options[0])
-// optionElement.setAttribute('selected', 'selected')
-// optionElement.innerText = options[0]
+fieldsetForm.append(textAreaFormGroup)
+textAreaFormGroup.append(textArea)
 
-// // Input Message
-// let inputFormGroupClone = formGroups[formGroups.length - 1].cloneNode(true)
-// fieldsetForm.append(inputFormGroupClone)
+// Lógica
 
-// for (let index of options) {
-//   let option = document.createElement('option')
-//   option.setAttribute('value', index)
-//   option.innerHTML = index;
-//   selectElement.appendChild(option)
-// }
+// parte I
 
-// selectElement.setAttribute('class', 'form-control choices__input ')
-// let selectElement = document.createElement('select')
-// divFormGroup.setAttribute('class', 'form-group choices choices__inner')
-// divFormGroup.prepend(selectElement)
-// let divFormGroup = document.createElement('div')
+// 1. Clonar o elemento select existente no formulário
+// 2. Inserir o elemento clonado no início do elemento pai
+// 3. Iterar sobre um array com as opções de carros e criar um novo elemento para cada item do array
+// 4. Alterar o campo selecionado ('placeholder') para o primeiro elemento do array de opções
+// 5. Funções:
+// 5.1 Abrir e fechar lista
+// 5.2 Destacar opção em mouse over
+// 5.3 Clicar para selecionar uma opção
+
+// parte II
+
+// 1. Criar um elemento div e ajustar o atributo class para um form group
+// 2. Inserir esse elemento no final do elemento pai
+// 3. Criar um elemento textarea
+// 4. Ajustar seus atributos
+// 5. Colocar detro da div.form-group criada
