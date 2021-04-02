@@ -8,7 +8,7 @@ let whatsappNumbers = [
 ];
 
 for (let index = 0; index < aElements.length; index += 1) {
-  var clone = aElements[index].cloneNode(true);
+  let clone = aElements[index].cloneNode(true);
   
   aElements[index].remove();
   liElements[index].prepend(clone);
