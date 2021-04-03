@@ -1,0 +1,54 @@
+.menu-item {
+  padding: 20px;
+  font-size: 14px;
+  position: relative;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-item::before {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  width: 85%;
+  z-index: -1;
+  border-bottom: 1px solid #726C75;
+}
+
+.menu-item:hover {
+  background-color: #FF1430;
+  font-weight: bold;
+  border-bottom: 1px solid #FF1430;
+  box-shadow: 0px 2px 4px #00000026;
+}
+
+.arrow-icon {
+  width: 14px;
+  height: 8px;
+  margin-right: 2%;
+  display: none;
+}
+
+.sub-menu {
+  margin: 20px;
+  display: none;
+}
+
+/* Animation on click */
+
+.menu-item.open {
+  background-color: #FF1430;
+  font-weight: bold;
+  border-bottom: 1px solid #FF1430;
+  box-shadow: 0px 2px 4px #00000026;
+}
+
+.sub-menu.open {
+  display: block;
+}
+
+.arrow-icon.open {
+  display: block;
+}
