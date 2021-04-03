@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+body {
+  background: #2B222F;
+  font-family: Roboto, sans-serif;
+  color: #EDEDE3;
+}
+
+ul, ol, li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #EDEDE3;
+}
+
+.navBar {
+  padding: 20px;
+  background: #18131F 0% 0% no-repeat padding-box;
+  box-shadow: 0px 2px 4px #0000000D;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navBar img:nth-of-type(2),
+.navBar img:nth-of-type(3) {
+  border-radius: 50%;
+  width: 30px;
+}
