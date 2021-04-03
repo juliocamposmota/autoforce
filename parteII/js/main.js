@@ -12,7 +12,25 @@ menuBtn.addEventListener('click', () => {
   }
 });
 
-// const menuItem = document.querySelector('.menu-item');
+let menuItem = document.querySelector('.menu-item');
+let subMenuItem = document.querySelector('.sub-menu');
+let arrow = document.querySelector('.arrow-icon');
+let menuItemOpen = false;
+
+menuItem.addEventListener('click', () => {
+  if(!menuItemOpen) {
+    menuItem.classList.add('open');
+    subMenuItem.classList.add('open');
+    arrow.classList.add('open');
+    menuItemOpen = true;
+  } else {
+    menuItem.classList.remove('open');
+    subMenuItem.classList.remove('open');
+    arrow.classList.remove('open');
+    menuItemOpen = false;
+  }
+});
+
 
 // function mouseOver() {
 //   this.classList.add('open');
