@@ -6,11 +6,15 @@
 
 :small_blue_diamond: [Descrição do projeto](#descrição-do-projeto)
 
-:small_blue_diamond: [Requisitos](#Requisitos)
-
-:small_blue_diamond: [Layout da Aplicação](#layout-da-aplicação-dash)
+:small_blue_diamond: [Requisitos](#requisitos)
 
 :small_blue_diamond: [Como rodar a aplicação](#como-rodar-a-aplicação-arrow_forward)
+
+:small_blue_diamond: [Linguagens, dependencias e libs utilizadas](#Linguagens,-dependencias-e-libs-utilizadas-books)
+
+:small_blue_diamond: [Tarefas em aberto](#tarefas-em-aberto)
+
+:small_blue_diamond: [licença](#licenca)
 
 ## Descrição do projeto 
 
