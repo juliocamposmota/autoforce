@@ -1,6 +1,8 @@
-.menu-item {
+.menu-item,
+.sub-menu-item {
   padding: 20px;
   font-size: 14px;
+  font-weight: 600;
   position: relative;
 
   display: flex;
@@ -8,18 +10,20 @@
   align-items: center;
 }
 
-.menu-item::before {
+.menu-item::before,
+.sub-menu-item::before {
   content: '';
   position: absolute;
   bottom: -1px;
-  width: 85%;
+  width: 86%;
   z-index: -1;
   border-bottom: 1px solid #726C75;
 }
 
-.menu-item:hover {
+.menu-item:hover,
+.sub-menu-item:hover {
   background-color: #FF1430;
-  font-weight: bold;
+  font-weight: 700;
   border-bottom: 1px solid #FF1430;
   box-shadow: 0px 2px 4px #00000026;
 }
@@ -33,7 +37,7 @@
 }
 
 .sub-menu {
-  margin: 20px;
+  padding-left: 20px;
   display: none;
 }
 
@@ -41,7 +45,7 @@
 
 .menu-item.open {
   background-color: #FF1430;
-  font-weight: bold;
+  font-weight: 700;
   border-bottom: 1px solid #FF1430;
   box-shadow: 0px 2px 4px #00000026;
 }
