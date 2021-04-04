@@ -41,3 +41,17 @@ for (let index = 0; index < menuItens.length; index += 1) {
     });
   }
 }
+
+let contactIcon = document.querySelector('.contact-icon');
+
+function animeScroll() {
+  let windowTop = window.pageYOffset + ((window.innerHeight * 3) / 4);
+
+  if (windowTop > contactIcon.offsetTop) {
+    contactIcon.classList.add('animate');
+  } else {
+    contactIcon.classList.remove('animate');
+  }
+}
+
+window.addEventListener('scroll', animeScroll);

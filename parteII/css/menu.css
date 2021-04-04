@@ -1,7 +1,7 @@
 nav {
   position: absolute;
   width: 100%;
-  max-width: 320px;
+  /* max-width: 320px; */
   transform: translateX(-100%);
   transition: 0.5s;
 }
@@ -12,8 +12,9 @@ nav.open {
 }
 
 .menu {
+  position: relative;
   width: 100%;
-  max-width: 320px;
+  /* max-width: 320px; */
 }
 
 .menu-item,
@@ -34,7 +35,6 @@ nav.open {
   position: absolute;
   bottom: -1px;
   width: 86%;
-  z-index: 1;
   border-bottom: 1px solid #726C75;
 }
 
@@ -114,4 +114,22 @@ span {
 .menu-item:hover span{
   color: #FF1430;
   background-color: #EDEDE3;
+}
+
+.contact img {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 0px 20px 15px 0px;
+}
+
+.contact-icon {
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.contact-icon.animate {
+  opacity: 1;
+  transition: 2s;
+  z-index: 1;
 }
