@@ -1,6 +1,27 @@
-.menu-item {
+nav {
+  position: absolute;
+  width: 100%;
+  /* max-width: 320px; */
+  transform: translateX(-100%);
+  transition: 0.5s;
+}
+
+nav.open {
+  transform: translateX(0);
+  transition: 0.5s;
+}
+
+.menu {
+  position: relative;
+  width: 100%;
+  /* max-width: 320px; */
+}
+
+.menu-item,
+.sub-menu-item {
   padding: 20px;
   font-size: 14px;
+  font-weight: 600;
   position: relative;
 
   display: flex;
@@ -8,18 +29,28 @@
   align-items: center;
 }
 
-.menu-item::before {
+.menu-item::before,
+.sub-menu-item::before {
   content: '';
   position: absolute;
   bottom: -1px;
-  width: 85%;
-  z-index: -1;
+  width: 86%;
   border-bottom: 1px solid #726C75;
 }
 
-.menu-item:hover {
+.menu-item:hover::before,
+.sub-menu-item:hover::before {
+  border: none;
+}
+
+.menu-item:last-child::before {
+  border: none;
+}
+
+.menu-item:hover,
+.sub-menu-item:hover {
   background-color: #FF1430;
-  font-weight: bold;
+  font-weight: 700;
   border-bottom: 1px solid #FF1430;
   box-shadow: 0px 2px 4px #00000026;
 }
@@ -28,11 +59,12 @@
   width: 14px;
   height: 8px;
   margin-right: 2%;
-  display: none;
+  transform: rotate(180deg);
+  transition: 0.5s;
 }
 
 .sub-menu {
-  margin: 20px;
+  padding-left: 20px;
   display: none;
 }
 
@@ -40,7 +72,7 @@
 
 .menu-item.open {
   background-color: #FF1430;
-  font-weight: bold;
+  font-weight: 700;
   border-bottom: 1px solid #FF1430;
   box-shadow: 0px 2px 4px #00000026;
 }
@@ -50,5 +82,54 @@
 }
 
 .arrow-icon.open {
-  display: block;
+  transform: rotate(0deg);
+}
+
+.menu-item.open::before,
+.sub-menu-item.open::before {
+  border: none;
+}
+
+.bar {
+  width: 85%;
+  border-radius: 15px;
+  margin: 15px auto;
+}
+
+.menu-button {
+  width: 75%;
+  padding: 15px;
+  margin: 15px auto;
+  border: 1px solid #FF1430;
+}
+
+span {
+  margin-left: 15px;
+  font-size: 11px;
+  background-color: #FF1430;
+  padding: 4px;
+  border-radius: 8px;
+}
+
+.menu-item:hover span{
+  color: #FF1430;
+  background-color: #EDEDE3;
+}
+
+.contact img {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 0px 20px 15px 0px;
+}
+
+.contact-icon {
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.contact-icon.animate {
+  opacity: 1;
+  transition: 2s;
+  z-index: 1;
 }

@@ -1,44 +1,57 @@
-
-const menuBtn = document.querySelector('.menu-btn');
+let menuBtn = document.querySelector('.menu-btn');
+let nav = document.querySelector('nav');
 let menuOpen = false;
 
 menuBtn.addEventListener('click', () => {
   if(!menuOpen) {
     menuBtn.classList.add('open');
+    nav.classList.add('open');
     menuOpen = true;
   } else {
     menuBtn.classList.remove('open');
+    nav.classList.remove('open');
     menuOpen = false;
   }
 });
 
-let menuItem = document.querySelector('.menu-item');
-let subMenuItem = document.querySelector('.sub-menu');
-let arrow = document.querySelector('.arrow-icon');
+let menuItens = document.querySelectorAll('.menu-item');
+let subMenuItens = document.querySelectorAll('.sub-menu');
+let arrows = document.querySelectorAll('.arrow-icon');
+
 let menuItemOpen = false;
 
-menuItem.addEventListener('click', () => {
-  if(!menuItemOpen) {
-    menuItem.classList.add('open');
-    subMenuItem.classList.add('open');
-    arrow.classList.add('open');
-    menuItemOpen = true;
+for (let index = 0; index < menuItens.length; index += 1) {
+  if (!subMenuItens[index]) {
+    break;
   } else {
-    menuItem.classList.remove('open');
-    subMenuItem.classList.remove('open');
-    arrow.classList.remove('open');
-    menuItemOpen = false;
+    menuItens[index].addEventListener('click', () => {
+      if(!menuItemOpen) {
+        menuItens[index].classList.add('open');
+        subMenuItens[index].classList.add('open');
+        arrows[index].classList.add('open');
+        
+        menuItemOpen = true;
+      } else {
+        menuItens[index].classList.remove('open');
+        subMenuItens[index].classList.remove('open');
+        arrows[index].classList.remove('open');
+        
+        menuItemOpen = false;
+      }
+    });
   }
-});
+}
 
+let contactIcon = document.querySelector('.contact-icon');
 
-// function mouseOver() {
-//   this.classList.add('open');
-// }
+function animeScroll() {
+  let windowTop = window.pageYOffset + ((window.innerHeight * 3) / 4);
 
-// function mouseOut() {
-//   this.classList.remove('open');
-// }
+  if (windowTop > contactIcon.offsetTop) {
+    contactIcon.classList.add('animate');
+  } else {
+    contactIcon.classList.remove('animate');
+  }
+}
 
-// menuItem.addEventListener('mouseover', mouseOver);
-// menuItem.addEventListener('mouseout', mouseOut);
+window.addEventListener('scroll', animeScroll);

@@ -12,18 +12,18 @@
 </head>
 <body>
   <header>
+    <section class="header">
+      <div class="menu-btn">
+        <div class="menu-btn__burger"></div>
+      </div>
+
+      <img src="./images/dealer-logo.svg">
+      <img src="./images/phoneIcon.png">
+      <img src="./images/whatsappIcon.png">
+      <img src="./images/fiat-logo.svg">
+    </section>
+
     <nav>
-      <section class="navBar">
-        <div class="menu-btn">
-          <div class="menu-btn__burger"></div>
-        </div>
-
-        <img src="./images/dealer-logo.svg">
-        <img src="./images/phoneIcon.png">
-        <img src="./images/whatsappIcon.png">
-        <img src="./images/fiat-logo.svg">
-      </section>
-
       <ul id="menu" class="menu">
         <li class="menu-item">
           <a class="menu-item-action">Institucional</a>
@@ -31,14 +31,21 @@
           <img src="./images/arrow.png" class="arrow-icon">
         </li>
         <ul class="sub-menu">
-          <li class="menu-item"><a class="menu-item-action">Quem Somos</a></li>
-          <li class="menu-item"><a class="menu-item-action">Fale Conosco</a></li>
-          <li class="menu-item"><a class="menu-item-action">Endereços</a></li>
+          <li class="sub-menu-item"><a class="menu-item-action">Quem Somos</a></li>
+          <li class="sub-menu-item"><a class="menu-item-action">Fale Conosco</a></li>
+          <li class="sub-menu-item"><a class="menu-item-action">Endereços</a></li>
         </ul>
 
         <li class="menu-item">
-          <a href="" class="menu-item-action">Novos</a>
+          <a class="menu-item-action">Novos</a>
+
+          <img src="./images/arrow.png" class="arrow-icon">
         </li>
+        <ul class="sub-menu">
+          <li class="sub-menu-item"><a class="menu-item-action">SUV</a></li>
+          <li class="sub-menu-item"><a class="menu-item-action">Hatch</a></li>
+          <li class="sub-menu-item"><a class="menu-item-action">Sedan</a></li>
+        </ul>
 
         <li class="menu-item">
           <a href="" class="menu-item-action">Ofertas</a>
@@ -49,7 +56,8 @@
         </li>
 
         <li class="menu-item">
-          <a href="" class="menu-item-action">Consórcio</a>
+          <a href="" class="menu-item-action">Consórcio<span>Novo</span></a>
+          
         </li>
 
         <li class="menu-item">
@@ -64,10 +72,21 @@
           <a href="" class="menu-item-action">Pós-vendas</a>
         </li>
       </ul>
+
+      <footer>
+        <img src="./images/bar.svg" class="bar">
+  
+        <div class="menu-button">
+          <a>VER TODOS OS MODELOS</a>
+        </div>
+      </footer>
+      
+      <section class="contact">
+        <img src="./images/contact.svg" class="contact-icon">
+      </section>
     </nav>
-
-
   </header>
+
 
   <script src="./js/main.js"></script>
 </body>

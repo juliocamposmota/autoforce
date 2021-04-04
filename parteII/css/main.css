@@ -5,9 +5,12 @@
 }
 
 body {
-  background: #2B222F;
+  background: #18131F;
   font-family: Roboto, sans-serif;
   color: #EDEDE3;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
 }
 
 ul, ol, li {
@@ -20,7 +23,11 @@ a {
   color: #EDEDE3;
 }
 
-.navBar {
+.menu {
+  background-color: #433B47;
+}
+
+.header {
   padding: 20px;
   background: #18131F 0% 0% no-repeat padding-box;
   box-shadow: 0px 2px 4px #0000000D;
@@ -29,8 +36,13 @@ a {
   align-items: center;
 }
 
-.navBar img:nth-of-type(2),
-.navBar img:nth-of-type(3) {
+.header img:nth-of-type(2),
+.header img:nth-of-type(3) {
   border-radius: 50%;
   width: 30px;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
 }
