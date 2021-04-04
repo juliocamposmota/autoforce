@@ -14,7 +14,7 @@
 
 :small_blue_diamond: [Tarefas em aberto](#tarefas-em-aberto)
 
-:small_blue_diamond: [licença](#licenca)
+:small_blue_diamond: [licença](#licença)
 
 ## Descrição do projeto 
 
