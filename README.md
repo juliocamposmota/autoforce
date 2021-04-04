@@ -54,6 +54,7 @@
 git clone git@github.com:juliocamposmota/autoforce.git
 ```
 2. Rodar no plugin live server do VS Code
+3. Ajustar a tela pra 320x568 
 
 ## Linguagens, dependencias e libs utilizadas :books:
 
