@@ -10,11 +10,11 @@
 
 :small_blue_diamond: [Como rodar a aplicação](#como-rodar-a-aplicação-arrow_forward)
 
-:small_blue_diamond: [Linguagens, dependencias e libs utilizadas](#Linguagens,-dependencias-e-libs-utilizadas-books)
+:small_blue_diamond: [Linguagens, dependencias e libs utilizadas](#Linguagens-dependencias-e-libs-utilizadas-books)
 
 :small_blue_diamond: [Tarefas em aberto](#tarefas-em-aberto)
 
-:small_blue_diamond: [licença](#licença)
+:small_blue_diamond: [Licença](#licença)
 
 ## Descrição do projeto 
 
