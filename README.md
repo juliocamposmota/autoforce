@@ -78,6 +78,10 @@ Próximos passos:
 
 :memo: Aplicar uma animação com JavaScript para abrir o sub-menu.
 
+:memo: Melhorar a estrutura das listas.
+
+:memo: Refatorar o código encapsulando em funções e usando métodos mais eficientes (event.target por exemplo).
+
 ## Desenvolvedores/Contribuintes :octocat:
 
 Time responsável pelo desenvolvimento deste projeto
